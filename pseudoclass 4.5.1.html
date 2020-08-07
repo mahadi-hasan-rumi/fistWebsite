@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        h1{
+            color:dimgray; 
+            transition: all 1s;
+
+        }
+        h1:hover{
+
+            color: greenyellow;
+            font-size: 40px;
+             background-color: violet;   
+             overflow: hidden;
+             
+
+        }
+        input{
+            display: block;
+            margin-bottom: 10px;
+            color: yellowgreen;
+
+        }
+        input:focus{
+
+               font-size: 25px;
+               color: teal; border-color: lightgreen;
+               border: 1px solid darkorange;
+
+
+        }
+        li:first-child{color: salmon;}
+        li:last-child{color: aquamarine;}
+        li:nth-child(2n){color: gray;}
+    
+        li:nth-child(2n+1){color: rgb(30, 129, 185);}
+
+        a:visited{color: lightcoral;}
+
+        .pseudoElement::after{content:" after";
+        color: darkseagreen;}
+
+        h1::before{content:"before " ;
+        color: fuchsia;}
+
+body{counter-reset: crush;}
+
+li::before{counter-increment: crush ; content:"crush "
+counter(crush) ": " }
+
+
+.beforeAfter::before{content: "💕";}
+
+.container{background-color: cornflowerblue;
+
+
+}
+#burlywood 
+{background-color: burlywood;
+height: 100px;
+width:100px;}
+
+#gray
+
+{background-color: gray;
+    height: 100px;
+    width:100px;
+    position: fixed;
+    left: 100px;
+    
+   
+    }
+
+    
+
+
+#yellowgreen
+{background-color: yellowgreen;
+    height: 100px;
+    width:100px;}
+
+h2#sectionHeading{ color: violet;}
+
+div{background-color: crimson;
+    height: 100px;
+    width:100px;
+
+}
+
+
+    </style>
+
+
+</head>
+<body>
+    
+    <h1>pseudo class</h1>
+    <h1 class="pseudoElement">pseudo class</h1>
+
+    <input name="email" type="text">
+    <input name="password"type="password">
+
+
+    <p>love</p>
+    <p>game</p>
+     <p>nothing</p>
+
+    
+    <p>get</p>
+    <p >back</p>
+    <p>cautious</p>
+     
+    <p class="beforeAfter">love</p>
+    <p class="beforeAfter">game</p>
+     <p class="beforeAfter">nothing</p>
+
+    
+    <p class="beforeAfter">get</p>
+    <p class="beforeAfter">back</p>
+    <p class="beforeAfter">cautious</p>
+    
+       
+
+<ul> <li>love</li>
+    <li>game</li>
+     <li>nothing</li>
+
+   
+    <li>get</li>
+    <li>back</li>
+    <li>cautious</li>
+    
+</ul>
+<br>
+<a href="https://www.google.com/search?q=%E0%A6%AA%E0%A7%8D%E0%A6%B0%E0%A6%A5%E0%A6%AE+%E0%A6%86%E0%A6%B2%E0%A7%8B&oq=pro&aqs=chrome.2.69i57j69i59j0l6.2881j0j15&sourceid=chrome&ie=UTF-8#">epaper page</a>
+<a href="https://translate.google.com/">google translate</a>
+
+
+<section><h2 id="sectionHeading">first section implement</h2></section>
+<section class="container">
+<div id="burlywood"></div>
+<div id="gray"></div>
+<div id="yellowgreen"></div>
+
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+</section>
+
+
+
+</body>
+</html>
